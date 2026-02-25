@@ -23,7 +23,7 @@ public class HelloController {
         return ResponseEntity.ok(helloService.getWelcomeMessage());
     }
 
-    @GetMapping("/health")
+    @GetMapping("/healthcheck")
     public ResponseEntity<ApiResponse> health() {
         return ResponseEntity.ok(helloService.getHealthStatus());
     }
