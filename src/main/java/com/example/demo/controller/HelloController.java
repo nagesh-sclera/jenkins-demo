@@ -37,4 +37,13 @@ public class HelloController {
             System.currentTimeMillis()
         ));
     }
+    @GetMapping("/greet/{name}/number/{number}")
+    public ResponseEntity<ApiResponse> greetNumber(@PathVariable String name,@PathVariable String number) {
+        return ResponseEntity.ok(new ApiResponse(
+            "Hello, " + name + "! Welcome to Jenkins CI/CD. with number " + number,
+            "running",
+            "1.0.0",
+            System.currentTimeMillis()
+        ));
+    }
 }
