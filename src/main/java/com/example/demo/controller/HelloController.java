@@ -18,7 +18,7 @@ public class HelloController {
         return ResponseEntity.ok(helloService.getWelcomeMessage());
     }
 
-    @GetMapping("/hellothere")
+    @GetMapping("/hello")
     public ResponseEntity<ApiResponse> hello() {
         return ResponseEntity.ok(helloService.getWelcomeMessage());
     }
