@@ -9,11 +9,6 @@ pipeline {
         APP_PORT       = '8080'
     }
 
-    tools {
-        maven 'Maven-3.9'   // Must match name in Jenkins > Global Tool Configuration
-        jdk   'JDK-17'      // Must match name in Jenkins > Global Tool Configuration
-    }
-
     stages {
 
         stage('Checkout') {
