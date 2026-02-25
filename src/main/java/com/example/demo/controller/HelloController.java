@@ -42,7 +42,7 @@ public class HelloController {
         return ResponseEntity.ok(new ApiResponse(
             "Hello, " + name + "! Welcome to Jenkins CI/CD. with number " + number,
             "running",
-            "1.0.0",
+            "2.0.0",
             System.currentTimeMillis()
         ));
     }
